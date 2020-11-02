@@ -1,0 +1,91 @@
+.LandingPage {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.ImageSection {
+  margin-right: 70px;
+}
+
+.DarkSquare {
+  width: 410px;
+  height: 490px;
+  background: #4f4f4f;
+}
+.LandingPageVerticalLine {
+  border-left: 4px solid #e5e5e5;
+  height: 220px;
+  margin-left: -380px;
+  margin-top: 270px;
+}
+
+.Name {
+  color: #e5e5e5;
+  font-size: 25px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  margin-top: -170px;
+  margin-left: -790px;
+}
+
+.img {
+  background: url(./pictures/blessing3.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 370px;
+  height: 400px;
+  margin-left: -370px;
+  margin-top: 55px;
+}
+
+.LandingPageDescription {
+  max-width: 500px;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 850px) {
+  .ImageSection {
+    margin-right: 50px;
+  }
+  .LandingPageVerticalLine {
+    height: 160px;
+    margin-left: -300px;
+    margin-top: 220px;
+  }
+
+  .Name {
+    font-size: 20px;
+    margin-top: -140px;
+    margin-left: -630px;
+  }
+
+  .DarkSquare {
+    width: 310px;
+    height: 380px;
+  }
+
+  .img {
+    width: 275px;
+    height: 310px;
+    margin-left: -295px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .LandingPage {
+    flex-direction: column;
+    align-items: unset;
+    padding-bottom: 30px;
+  }
+
+  .ImageSection {
+    margin-right: 0px;
+    padding-bottom: 30px;
+  }
+}
